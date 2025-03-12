@@ -19,11 +19,10 @@ const Login = ({setToken}) => {
       });
 
       if(response.data.success){
-        setToken(response.data.success)
+        setToken(response.data.token)
         toast.success('successfully')
       }
-      else{
-        
+      else{  
         toast.error('Wrong email or password')
       }
     } catch (error) {
@@ -31,9 +30,7 @@ const Login = ({setToken}) => {
     }
   }
 
-  useEffect(() => {
-    
-  }, [token]);
+
   return (
     <div className='min-h-screen flex justify-center items-center bg-green-50/30 '>
          <div className='w-md flex flex-col gap-4 bg-white p-6 shadow-md'>

@@ -10,6 +10,14 @@
     --breakpoint-3xl: 1920px;
 }
 
+select,
+input,
+textarea {
+    outline-color: rgb(236, 195, 207);
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+
 .active {
     border: solid 2px rgba(0, 0, 0, 0.411);
     background-color: rgb(255, 236, 249);
