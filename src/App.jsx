@@ -33,9 +33,9 @@ const App = () => {
       <SideBar/>
       <div className='w-[70%]'>
         <Routes>
-          <Route path='/add' element={<Add/>} />
+          <Route path='/add' element={<Add token={token}/>} />
           <Route path='/orders' element={<Orders/>} />
-          <Route path='/list' element={<List/>} />
+          <Route path='/list' element={<List token={token}/>} />
         </Routes>
 
       </div>
